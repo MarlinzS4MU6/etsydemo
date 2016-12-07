@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etsydemo</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+<%= render 'layouts/header' %>
+<%#This^ renders nav bar in _header.html.erb %>
+
+<div class="container">
+    <%= yield %>
+
+<%= render 'layouts/footer' %>
+<%# This renders the copy right in the footer %>
+
+</div>
+
+  </body>
+</html>
